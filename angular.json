@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "wizard": "apps/wizard",
-    "wizard-e2e": "apps/wizard-e2e"
+    "wizard": "apps/wizard"
   }
 }
