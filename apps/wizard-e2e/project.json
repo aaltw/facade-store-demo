@@ -1,0 +1,28 @@
+{
+  "root": "apps/wizard-e2e",
+  "sourceRoot": "apps/wizard-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/wizard-e2e/cypress.json",
+        "devServerTarget": "wizard:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "wizard:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/wizard-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["wizard"]
+}

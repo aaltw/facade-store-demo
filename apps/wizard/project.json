@@ -1,0 +1,90 @@
+{
+  "projectType": "application",
+  "root": "apps/wizard",
+  "sourceRoot": "apps/wizard/src",
+  "prefix": "facade-store-demo",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/wizard",
+        "index": "apps/wizard/src/index.html",
+        "main": "apps/wizard/src/main.ts",
+        "polyfills": "apps/wizard/src/polyfills.ts",
+        "tsConfig": "apps/wizard/tsconfig.app.json",
+        "assets": ["apps/wizard/src/favicon.ico", "apps/wizard/src/assets"],
+        "styles": ["apps/wizard/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/wizard/src/environments/environment.ts",
+              "with": "apps/wizard/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "wizard:build:production"
+        },
+        "development": {
+          "browserTarget": "wizard:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "wizard:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/wizard/src/**/*.ts",
+          "apps/wizard/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/wizard"],
+      "options": {
+        "jestConfig": "apps/wizard/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
