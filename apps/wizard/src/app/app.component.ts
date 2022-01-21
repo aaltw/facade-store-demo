@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'facade-store-demo-root',
   template: `<router-outlet></router-outlet>`
 })
-export class AppComponent {
-  title = 'wizard';
-}
+export class AppComponent {}
