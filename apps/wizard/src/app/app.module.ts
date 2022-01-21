@@ -8,6 +8,10 @@ const appRoutes: Routes = [
   {
     path: 'smart-contract',
     loadChildren: () => import('./smart-contract/smart-contract.module').then((m) => m.SmartContractModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'smart-contract',
   }
 ]
 
