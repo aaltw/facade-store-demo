@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><rect width="1000" height="1000" rx="200" ry="200" fill="#555555"></rect><g transform="matrix(6.6115702479338845,0,0,6.6115702479338845,114.0289256198347,323.6818181818182)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="121" height="44"><svg width="121" height="44" viewBox="0 0 121 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_103_46" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="121" height="44">
+<rect width="121" height="44" fill="white"></rect>
+</mask>
+<g mask="url(#mask0_103_46)">
+<path d="M30 40H52" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M3 -4L32 45" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M75 -3L46 46" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M71 40H93" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M44 -5L73 44" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M118 -5L89 44" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M51 4.00002H29" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<path d="M3 48L32 -0.999979" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+<mask id="mask1_103_46" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="43" y="-3" width="37" height="55">
+<path d="M47 -3.8147e-06L76 49" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+</mask>
+<g mask="url(#mask1_103_46)">
+<path d="M46 34L74 -13" stroke="black" stroke-opacity="0.47" stroke-width="3" stroke-linejoin="round"></path>
+</g>
+<mask id="mask2_103_46" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-4" y="-12" width="37" height="55">
+<path d="M0 -9L29 40" stroke="white" stroke-width="9" stroke-linejoin="round"></path>
+</mask>
+<g mask="url(#mask2_103_46)">
+<path d="M-2 68L26 21" stroke="black" stroke-opacity="0.47" stroke-width="3" stroke-linejoin="round"></path>
+</g>
+</g>
+</svg></svg></g></svg>
