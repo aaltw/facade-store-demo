@@ -11,7 +11,7 @@ const appRoutes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'smart-contract',
+    redirectTo: '/smart-contract',
   }
 ]
 
