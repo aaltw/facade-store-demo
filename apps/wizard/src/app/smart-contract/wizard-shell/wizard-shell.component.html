@@ -1,32 +1,32 @@
-<div class="flex flex-col h-screen">
-  <div class="flex items-center justify-start h-16 space-x-4">
-    <div routerLink="1" class="flex flex-row items-center space-x-2 cursor-pointer">
+<div class="flex flex-col h-full grow">
+  <div class="flex items-center justify-start h-16 mx-4 space-x-8 border-b border-b-gray-700">
+    <div routerLink="1" class="flex flex-row items-center space-x-4 cursor-pointer">
       <div
-        class="flex items-center justify-center w-10 h-10 text-orange-100 bg-orange-500 rounded-full"
+        class="flex items-center justify-center w-8 h-8 text-sm text-orange-700 bg-transparent border-2 border-orange-700 rounded-full"
       >
         1
       </div>
-      <div class="text-sm font-light">General info</div>
+      <div class="font-light text-orange-700">General info</div>
     </div>
-    <div routerLink="2" class="flex flex-row items-center space-x-2 cursor-pointer opacity-30">
+    <div routerLink="2" class="flex flex-row items-center space-x-4 cursor-pointer">
       <div
-        class="flex items-center justify-center w-10 h-10 text-orange-100 bg-orange-500 rounded-full"
+      class="flex items-center justify-center w-8 h-8 text-sm text-orange-100 bg-orange-700 rounded-full"
       >
         2
       </div>
-      <div class="text-sm font-light">Products</div>
+      <div class="font-light text-orange-700">Products</div>
     </div>
-    <div routerLink="3" class="flex flex-row items-center space-x-2 cursor-pointer opacity-30">
+    <div routerLink="3" class="flex flex-row items-center space-x-4 cursor-pointer opacity-30">
       <div
-        class="flex items-center justify-center w-10 h-10 text-orange-100 bg-orange-500 rounded-full"
+        class="flex items-center justify-center w-8 h-8 text-sm text-orange-100 bg-orange-700 rounded-full"
       >
         3
       </div>
-      <div class="text-sm font-light">Summary</div>
+      <div class="font-light text-orange-700">Summary</div>
     </div>
   </div>
 
-  <div class="grow bg-slate-200">
+  <div class="bg-gray-800 grow">
     <router-outlet></router-outlet>
   </div>
 </div>
