@@ -7,6 +7,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
 import { SummaryAndConfirmationComponent } from './summary-and-confirmation/summary-and-confirmation.component';
 import { WizardShellComponent } from './wizard-shell/wizard-shell.component';
 import { ShellComponent } from './shell/shell.component';
+import { SmartContractFacade } from './smart-contract-facade';
 
 const smartContractRoutes: Routes = [
   {
@@ -52,6 +53,9 @@ const smartContractRoutes: Routes = [
     SummaryAndConfirmationComponent,
     WizardShellComponent,
     ShellComponent,
+  ],
+  providers: [
+    SmartContractFacade,
   ],
   imports: [CommonModule, RouterModule.forChild(smartContractRoutes)],
 })
